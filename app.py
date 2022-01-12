@@ -8,7 +8,7 @@ import pickle
 
 st.title("Housing Prices in Iowa")
 
-url = r'https://github.com/rickglover41/streamlit_hw3/blob/5c24c230e3e09ac3cb5700becd84d999a53427d6/iowa_mini.csv'
+url = r'https://raw.githubusercontent.com/rickglover41/streamlit_hw3/main/iowa_mini.csv'
 
 num_rows = st.sidebar.number_input('Select Number of Rows to Load', min_value = 50, max_value = 1500, step = 50)
 
