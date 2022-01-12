@@ -58,7 +58,7 @@ else:
 	year_blt = st.sidebar.number_input('What year was the house built?', min_value = 1800, max_value = 2010, value = 2000, step = 1)
 	garage_blt = st.sidebar.number_input('What year was the garage built? (0 if no garage)', min_value = 0, max_value = 2010, value = 2000, step = 1)
 	garage_cars = st.sidebar.slider('How many cars can the garage hold? (0 if not garage)', min_value = 0, max_value = 4, value = 0, step = 1)
-	garage_type = st.sidebar.selectbox('What type of garage? (0 if no garage)', df['GarageType'].unique().tolist())
+	garage_type = st.sidebar.selectbox('What type of garage? (nan if no garage)', df['GarageType'].unique().tolist())
 	
 	sample = {
 	'OverallQual': overall_qual,
